@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { MessageCircle } from 'lucide-react';
 import HeroProduct1 from '../images/HeroProduct1.webp';
 import HeroProduct2 from '../images/HeroProduct2.webp';
 

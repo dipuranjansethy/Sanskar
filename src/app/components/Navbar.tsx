@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { ShoppingCart, Search, User, Menu, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
