@@ -6,7 +6,7 @@ interface Product {
   name: string;
   price: number;
   originalPrice: number; 
-  image: StaticImageData; // Change 'any' to 'StaticImageData'
+  image: StaticImageData; 
 }
 
 const ProductCard = ({ product }: { product: Product }) => (
@@ -150,7 +150,7 @@ const ProductCatalog = () => {
           {products.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
-        </div>
+        </div> 
         <button className="bg-teal-600 text-white px-8 py-2.5 rounded-full text-sm uppercase tracking-wider hover:bg-teal-700 transition-colors font-medium mt-4">
           VIEW ALL
         </button>
