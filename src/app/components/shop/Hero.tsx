@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Hero = () => {
@@ -10,7 +11,7 @@ const Hero = () => {
           <h1 className="text-2xl font-bold mb-6">AGARBATHIS, DHOOP STICKS & DHOOP CONES</h1>
           
           <div className="mb-8">
-            <img 
+            <Image 
               src="/api/placeholder/800/500" 
               alt="Agarbathi products display" 
               className="rounded-lg shadow-lg mx-auto"
