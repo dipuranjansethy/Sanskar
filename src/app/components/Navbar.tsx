@@ -32,15 +32,15 @@ const Navbar = () => {
           <Link href="/shop" className="text-gray-800 hover:text-gray-600">
             Shop Now
           </Link>
-          <Link href="/horoscope" className="text-gray-800 hover:text-gray-600">
+          {/* <Link href="/horoscope" className="text-gray-800 hover:text-gray-600">
             Horoscope
-          </Link>
+          </Link> */}
           <Link href="/blogs" className="text-gray-800 hover:text-gray-600">
             Festival Blogs
           </Link>
-          <Link href="/flowers" className="text-gray-800 hover:text-gray-600">
+          {/* <Link href="/flowers" className="text-gray-800 hover:text-gray-600">
             Fresh Flowers Near You
-          </Link>
+          </Link> */}
         </div>
 
         {/* Icons Section */}

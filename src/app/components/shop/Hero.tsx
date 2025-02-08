@@ -1,55 +1,50 @@
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
+import HeroImage from '../../images/shop/Hero.webp';
 
 const Hero = () => {
-  const fragrances = ['Rose', 'Jasmine', 'Lavender', 'Sandalwood', 'Tulsi'];
-  
   return (
-    <div className=" min-h-screen p-8">
-      <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur rounded-lg shadow p-8">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold mb-6">AGARBATHIS, DHOOP STICKS & DHOOP CONES</h1>
-          
-          <div className="mb-8">
-            <Image 
-              src="/api/placeholder/800/500" 
-              alt="Agarbathi products display" 
-              className="rounded-lg shadow-lg mx-auto"
+    <section className="bg-yellow-400 py-16 px-4 border-y border-black">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-8 text-gray-800">
+          AGARBATHIS, DHOOP STICKS & DHOOP CONES
+        </h2>
+
+        <div className="mb-8">
+          <div className="relative inline-block">
+            <Image
+              src={HeroImage}
+              alt="Various incense products with flowers"
+              width={HeroImage.width}  // Uses the original width of the image
+              height={HeroImage.height} // Uses the original height of the image
+              className="rounded-lg"
             />
           </div>
+        </div>
 
-          <p className="text-lg mb-4 italic">
+        <div className="space-y-6 text-gray-800">
+          <p className="text-lg italic">
             We bring to you a fresh take on traditions - now, beyond your flowers!
           </p>
 
-          <p className="mb-4">
-            Agarbathis, Dhoop Sticks and Incense Cones in five different fragrances:
+          <p className="text-lg">
+            Agarbathis, Dhoop Sticks and Incense Cones in five different fragrances - 
+            Rose, Jasmine, Lavender, Sandalwood and Tulsi.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-6">
-            {fragrances.map((fragrance) => (
-              <span 
-                key={fragrance}
-                className="px-4 py-2 bg-amber-50 rounded-full shadow"
-              >
-                {fragrance}
-              </span>
-            ))}
-          </div>
-
-          <p className="mb-4">
-            Our Agarbattis are made from sacred temple flowers. The dhoop sticks and cones 
-            are made with natural ingredients to ensure a peaceful and beautiful 
+          <p className="text-lg">
+            Our Agarbattis are made from sacred temple flowers. The dhoop sticks and 
+            cones are made with natural ingredients to ensure a peaceful and beautiful 
             pooja experience.
           </p>
 
-          <p className="text-lg font-medium">
+          <p className="text-lg">
             Just light them and sit back to enjoy, as the subtle aroma fills the room 
             and awakens your senses. Enter a world of fragrance with Hooyu today!
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
